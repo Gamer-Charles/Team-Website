@@ -76,17 +76,17 @@
                     }
                 }
 
-                this.crashWith = function(otherobj) {
-                    var myleft = this.x;
-                    var myright = this.x + (this.width);
-                    var mytop = this.y;
-                    var mybottom = this.y + (this.height)
-                    var otherleft = otherobj.x;
-                    var otherright = otherobj.x + (otherobj.width);
-                    var othertop = otherobj.y;
-                    var otherbottom = otherobj.y + (otherobj.height);
+                this.crashWith = function(otherObj) {
+                    var myLeft = this.x;
+                    var myRight = this.x + (this.width);
+                    var myTop = this.y;
+                    var myBottom = this.y + (this.height)
+                    var otherLeft = otherObj.x;
+                    var otherRight = otherObj.x + (otherObj.width);
+                    var otherTop = otherObj.y;
+                    var otherBottom = otherObj.y + (otherObj.height);
                     var crash = true;
-                    if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+                    if ((myBottom < otherTop) || (myTop > otherBottom) || (myRight < otherLeft) || (myLeft > otherRight)) {
                         crash = false;
                     }
                     return crash;
@@ -145,3 +145,4 @@
     </body>
 
 </html>
+
